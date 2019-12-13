@@ -69,6 +69,11 @@ public class Auto {
         this.carroceria = carroceria;
     }
 
+    @Override
+    public String toString() {
+        return "Marca:" + Marca + ", Modelo:" + Modelo + ", motor:" + motor.getNumero() + ", Alamcenamiento:" + tanque.getAlmacenamiento() + ", carroceria:" + carroceria.getSerie();
+    }
+
     
     
     
