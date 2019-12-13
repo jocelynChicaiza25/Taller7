@@ -29,8 +29,8 @@ public class Concesionaria {
             System.out.println("//Elija una opción//");
             System.out.println("1. Crear Chevrolet Spark");
             System.out.println("2. Crear Chevrolet Sail");
-            System.out.println("3. Crear Chevrolet Sail");
-            System.out.println("4. Mostrar autos");
+            System.out.println("3. Crear Chevrolet Beat");
+            System.out.println("4. Mostrar autos ensamblados");
             System.out.println("5. Cerrar");
 
             Scanner sc = new Scanner(System.in);
