@@ -16,7 +16,7 @@ public class AutoDirector {
         this.builder=builder;
     }
     public void ConstruirAuto(){
-        builder.definirComputador();
+        builder.definirAuto();
         builder.instalarCarrocería();
         builder.instalarMotor();
         builder.instalarTanque();

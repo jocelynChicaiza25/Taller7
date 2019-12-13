@@ -16,7 +16,7 @@ public abstract class AutoBuilder {
     public Auto getAuto(){
         return a;
     }
-    public abstract void definirComputador();
+    public abstract void definirAuto();
     public abstract void instalarCarrocería();
     public abstract void instalarMotor();
     public abstract void instalarTanque();

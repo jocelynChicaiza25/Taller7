@@ -9,62 +9,33 @@ package concesionaria.creacional;
  *
  * @author cajas
  */
-public class ChevroletSparkBuilder {
-    private String marca;
-    private String modelo;
-    private String motor;
-    private int almacenamiento;
-    private String carroceria;
+public class ChevroletSparkBuilder extends AutoBuilder{
 
-    public ChevroletSparkBuilder(String marca, String modelo, String motor, int almacenamiento, String carroceria) {
-        this.marca = marca;
-        this.modelo = modelo;
-        this.motor = motor;
-        this.almacenamiento = almacenamiento;
-        this.carroceria = carroceria;
+    @Override
+    public void definirAuto() {
+        a=new Auto();
+        a.setMarca("Chevrolet");
+        a.setModelo("Spark");
     }
 
-    
-    
-    public String getMarca() {
-        return marca;
+    @Override
+    public void instalarCarrocería() {
+        a.setCarroceria(new Carroceria());
+        a.getCarroceria().setSerie("JWE9EWF8");
     }
 
-    public void setMarca(String marca) {
-        this.marca = marca;
+    @Override
+    public void instalarMotor() {
+        a.setMotor(new Motor());
+        a.getMotor().setNumero(1.2);
     }
 
-    public String getModelo() {
-        return modelo;
+    @Override
+    public void instalarTanque() {
+        a.setTanque(new Tanque());
+        a.getTanque().setAlmacenamiento("500 lb");
     }
-
-    public void setModelo(String modelo) {
-        this.modelo = modelo;
-    }
-
-    public String getMotor() {
-        return motor;
-    }
-
-    public void setMotor(String motor) {
-        this.motor = motor;
-    }
-
-    public int getAlmacenamiento() {
-        return almacenamiento;
-    }
-
-    public void setAlmacenamiento(int almacenamiento) {
-        this.almacenamiento = almacenamiento;
-    }
-
-    public String getCarroceria() {
-        return carroceria;
-    }
-
-    public void setCarroceria(String carroceria) {
-        this.carroceria = carroceria;
-    }
+   
     
     
     
